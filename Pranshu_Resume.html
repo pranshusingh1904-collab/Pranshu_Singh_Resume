@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pranshu Singh | Curious by default.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@500;600;700&family=DM+Mono:wght@400;500&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#efe8d7;--paper2:#e5dcc8;--black:#11120f;--red:#f04424;--yellow:#e9f24b;--blue:#5072cf;--pink:#ee7ca9;--green:#88a65b;--gray:#76756c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--black);font-family:Inter,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}.page{width:min(1220px,calc(100% - 42px));margin:auto}
+.top{height:78px;border-bottom:2px solid var(--black);display:flex;align-items:center;justify-content:space-between;position:fixed;top:0;left:0;right:0;width:100%;padding:0 38px;background:rgba(239,232,215,.93);backdrop-filter:blur(10px);z-index:50}.name{font:800 20px "Archivo Black";letter-spacing:-.05em}.name i{display:inline-block;width:10px;height:10px;background:var(--red);border-radius:50%;margin-left:4px}
+nav{display:flex;gap:24px;font:11px "DM Mono";text-transform:uppercase}nav a{position:relative}nav a:after{content:"";height:2px;background:var(--red);position:absolute;left:0;right:100%;bottom:-5px;transition:.3s}nav a:hover:after{right:0}.linkedin{background:var(--yellow);padding:8px 11px}
+main{padding-top:78px}.hero{min-height:720px;display:flex;align-items:center;padding:55px 0 70px;position:relative}
+.hero h1{font:normal clamp(68px,10vw,145px)/.79 "Archivo Black";letter-spacing:-.07em;text-transform:uppercase;margin:0;max-width:700px}.hero h1 span{color:var(--red)}.hero-copy{font-size:16px;line-height:1.7;max-width:560px;margin:34px 0}.scribble{font:31px Caveat;color:var(--red);transform:rotate(-5deg);display:inline-block}
+
+
+.marquee{background:var(--red);color:white;border-top:2px solid var(--black);border-bottom:2px solid var(--black);padding:12px 0;overflow:hidden;white-space:nowrap;font:12px "DM Mono";text-transform:uppercase}.marquee div{display:inline-block;animation:slide 25s linear infinite}.marquee b{color:var(--yellow);padding:0 22px}
+section{padding:105px 0}.section-kicker{font:11px "DM Mono";text-transform:uppercase;letter-spacing:.12em;margin-bottom:25px}.section-kicker:before{content:"0" attr(data-no) "  /  ";color:var(--red)}
+.statement{font:normal clamp(42px,6vw,83px)/.9 "Archivo Black";letter-spacing:-.07em;text-transform:uppercase;margin:0;max-width:1000px}.statement .mark{background:var(--yellow);padding:0 8px}.small-note{font:23px Caveat;color:var(--gray);max-width:430px;margin:30px 0 0 45%}
+
+.work-head{display:flex;justify-content:space-between;align-items:end}.work-head h2,.personal h2{font:normal clamp(58px,8vw,105px)/.8 "Archivo Black";letter-spacing:-.07em;text-transform:uppercase;margin:0}.work-head p{max-width:310px;font:20px Caveat;margin:0 0 8px}.workgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:45px}
+.work{border:2px solid var(--black);padding:24px;min-height:390px;position:relative;overflow:hidden;transition:.4s;background:var(--paper2)}.work:nth-child(1){background:var(--red);color:white;transform:rotate(-1deg)}.work:nth-child(2){transform:rotate(1deg)}.work:nth-child(3){background:var(--yellow);transform:rotate(-1deg)}.work:nth-child(4){background:var(--blue);color:white;transform:rotate(1deg)}.work:hover{transform:translateY(-10px) rotate(0deg);box-shadow:9px 10px 0 var(--black)}.work-img{height:150px;margin:-15px -15px 20px;overflow:hidden;border-bottom:2px solid var(--black)}.work-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(.7);transition:.5s}.work:hover img{transform:scale(1.08)}.work .no{font:10px "DM Mono";position:absolute;right:18px;top:18px}.work:before{content:"";display:block;width:46px;height:8px;background:currentColor;margin-bottom:90px;opacity:.85}.work h3{font-size:30px;line-height:1;letter-spacing:-.04em;margin:10px 0}.work p{font-size:12px;line-height:1.55;margin:0}.work a{position:absolute;bottom:22px;left:24px;font:10px "DM Mono";border-bottom:1px solid currentColor}
+.feature{margin-top:70px;background:var(--black);color:white;padding:48px;display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;position:relative;overflow:hidden}.feature h3{font:normal clamp(43px,5vw,70px)/.88 "Archivo Black";letter-spacing:-.06em;text-transform:uppercase;margin:0}.feature p{color:#c6c4ba;line-height:1.7;font-size:14px}.feature .yellow{color:var(--yellow)}.feature .scribble{position:absolute;right:5%;bottom:8%;font-size:38px;color:var(--yellow);transform:rotate(-8deg)}
+/* personal section */
+.personal{margin-left:calc((1220px - 100vw)/2);margin-right:calc((1220px - 100vw)/2);padding-left:max(21px,calc((100vw - 1220px)/2 + 21px));padding-right:max(21px,calc((100vw - 1220px)/2 + 21px));background:var(--paper2);border-top:2px solid var(--black);border-bottom:2px solid var(--black);position:relative;overflow:hidden}.personal .section-kicker{color:var(--red)}.personal-head{display:flex;justify-content:space-between;align-items:end}.personal h2{max-width:850px}.personal-note{font:29px Caveat;max-width:240px;transform:rotate(4deg);text-align:right}
+
+
+
+.influences{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:45px}.influence{border:2px solid var(--black);padding:27px;background:var(--paper);min-height:220px;position:relative;transition:.35s}.influence:hover{transform:rotate(-1deg);box-shadow:8px 9px 0 var(--black)}.influence .type{font:10px "DM Mono";text-transform:uppercase}.influence h3{font:normal 38px "Archivo Black";letter-spacing:-.055em;margin:25px 0 12px}.influence p{font-size:13px;line-height:1.65;margin:0;max-width:480px}.influence .quote{font:24px Caveat;line-height:1.15;margin:18px 0 0}.jobs{background:var(--yellow)}.kobe{background:var(--blue);color:white}.kobe p{color:#edf0ff}.music{background:var(--red);color:white}.music p{color:#ffe4dd}.personal .footer-note{font:34px Caveat;text-align:center;margin:70px auto 0;max-width:650px;transform:rotate(-2deg)}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.about h2{font:normal clamp(55px,7vw,90px)/.82 "Archivo Black";letter-spacing:-.07em;text-transform:uppercase;margin:0}.about-copy{font-size:18px;line-height:1.7;max-width:590px}.about-copy b{background:var(--yellow);padding:2px 5px}
+.contact{background:var(--red);color:white;padding:60px 50px;border:2px solid var(--black);box-shadow:10px 11px 0 var(--black);position:relative}.contact h2{font:normal clamp(55px,8vw,110px)/.8 "Archivo Black";letter-spacing:-.08em;text-transform:uppercase;margin:0}.contact p{max-width:500px;line-height:1.65}.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.link{background:white;color:var(--black);padding:11px 15px;font:11px "DM Mono";border:2px solid var(--black);transition:.25s}.link:hover{background:var(--yellow);transform:translate(-2px,-2px)}
+footer{padding:45px 0;font:10px "DM Mono";display:flex;justify-content:space-between}
+.reveal{opacity:0;transform:translateY(35px);transition:.8s}.reveal.show{opacity:1;transform:none}
+@keyframes slide{to{transform:translateX(-50%)}}@media(max-width:850px){.top{padding:0 18px}.name{font-size:15px}nav{display:none}.page{width:calc(100% - 28px)}main{padding-top:78px}.hero{min-height:auto;padding:65px 0}.hero h1{font-size:65px}.photo img{width:70%}.work-head{display:block}.work-head p{margin-top:20px}.workgrid{grid-template-columns:1fr 1fr}.feature{grid-template-columns:1fr;padding:30px 25px}.personal{margin-left:-14px;margin-right:-14px;padding-left:14px;padding-right:14px}.personal-head{display:block}.personal-note{text-align:left;margin-top:20px}.influences{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:35px}.contact{padding:40px 25px}.cursor{display:none}footer{display:block}footer span{display:block;margin-top:8px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="name" href="#">PRANSHU SINGH<i></i></a>
+  <nav>
+    <a href="#work">Work</a><a href="#personal">Play</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <a class="linkedin" href="https://www.linkedin.com/in/pranshu-singh-80a476239/" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </nav>
+</header>
+
+<main>
+<div class="page">
+<section class="hero">
+  <div>
+    <div class="section-kicker" data-no="01">Personal website, professional problem solver</div>
+    <h1>Curious.<br><span>Creative.</span><br>Restless.</h1>
+    <p class="hero-copy">I'm Pranshu. I like understanding how things work, finding the interesting bit everyone missed, and then doing something about it.</p>
+    <div class="scribble">smart enough to ask better questions.</div>
+  </div>
+</section>
+</div>
+
+<div class="marquee"><div>BUSINESS <b>✦</b> IDEAS <b>✦</b> PEOPLE <b>✦</b> MUSIC <b>✦</b> SPORT <b>✦</b> DESIGN <b>✦</b> CURIOSITY <b>✦</b> BUSINESS <b>✦</b> IDEAS <b>✦</b> PEOPLE <b>✦</b> MUSIC <b>✦</b> SPORT <b>✦</b> DESIGN <b>✦</b> CURIOSITY <b>✦</b></div></div>
+
+<div class="page">
+<section id="story">
+  <div class="section-kicker reveal" data-no="02">A work in progress</div>
+  <p class="statement reveal">This is not the <span class="mark">whole story.</span><br>It is just a few chapters.</p>
+  <p class="small-note reveal">I'm still early in the journey. The roles below are things I've learned from, not a definition of where I'm going.</p>
+</section>
+
+<section id="work">
+  <div class="section-kicker reveal" data-no="03">A few chapters</div>
+  <div class="work-head reveal"><h2>A few things<br>I've done.</h2><p>Not a complete career timeline. Just the experiences that shaped how I think, work and build.</p></div>
+  <div class="workgrid">
+    <article class="work reveal"><div class="no">01</div><h3>Director's Office<br>Program Associate</h3><p>Tetr College of Business. Admissions analytics, events, funnel insights and cross-functional execution across 8 global regions.</p><a href="#contact">MORE ↗</a></article>
+    <article class="work reveal"><div class="no">02</div><h3>Project Intern</h3><p>Tribond Worldwide Logistics. International shipments, operational KPIs, MIS dashboards and execution bottlenecks.</p><a href="#contact">MORE ↗</a></article>
+    <article class="work reveal"><div class="no">03</div><h3>Founder & Client<br>Acquisition Lead</h3><p>Trajex Media. Built the venture, won the first client in a month and generated ₹50K+ early-stage revenue.</p><a href="#contact">MORE ↗</a></article>
+    <article class="work reveal"><div class="no">04</div><h3>Vice President</h3><p>Enactus VIPS-TC. Led a 70+ member organisation and built two ventures from research through stakeholder execution.</p><a href="#contact">MORE ↗</a></article>
+  </div>
+  <div class="feature reveal">
+    <div><div class="section-kicker">How I think</div><h3>Curiosity<br>first.<br><span class="yellow">Ego later.</span></h3></div>
+    <div><p>I don't want to be the person who already knows everything. I want to be the person who asks the question nobody thought to ask.</p><p>Then I want to test the idea, find the pattern, make it simpler and see if it actually works.</p></div>
+    <div class="scribble">ask better questions.</div>
+  </div>
+</section>
+
+<section id="personal" class="personal">
+  <div class="personal-head"><div><div class="section-kicker reveal" data-no="04">The part the résumé doesn't show</div><h2 class="reveal">Off the<br>clock.</h2></div><div class="personal-note reveal">less portfolio. more personality.</div></div>
+  <div class="statement reveal" style="font-size:clamp(35px,5vw,68px);max-width:900px;margin:45px 0 65px">I like <span class="mark">great ideas</span>, good music, competitive people and anything that makes me stop scrolling.</div>
+  <div class="influences">
+    <article class="influence jobs reveal"><div class="type">01 / Role model</div><h3>Steve Jobs</h3><p>I like the obsession with taste, simplicity and making something feel obvious only after you've done the hard work.</p><div class="quote">“Stay hungry. Stay foolish.”</div></article>
+    <article class="influence kobe reveal"><div class="type">02 / Role model</div><h3>Kobe Bryant</h3><p>The standard. The discipline. The idea that talent gets you noticed but the work decides what happens next.</p><div class="quote">“Everything negative, pressure, challenges is all an opportunity for me to rise.”</div></article>
+    <article class="influence music reveal"><div class="type">03 / Soundtrack</div><h3>Kendrick Lamar<br>Baby Keem<br>Frank Ocean</h3><p>I like artists with a point of view. Detail over noise. Experimentation without losing identity.</p></article>
+    <article class="influence reveal"><div class="type">04 / Personality</div><h3>Curiosity is the hobby.</h3><p>Business, technology, design, sport, music, people. If something is interesting, I want to know why.</p></article>
+  </div>
+  <div class="footer-note reveal">“The goal isn't to look creative. It's to have something worth being creative about.”</div>
+</section>
+
+<section id="about">
+  <div class="section-kicker reveal" data-no="05">The person behind the work</div>
+  <div class="about"><h2 class="reveal">Business<br>brain.<br>Creative<br>itch.</h2><div class="about-copy reveal"><p><b>I don't really see a line between analytical and creative.</b> Good thinking needs both.</p><p>I studied Computer Applications at Vivekananda Institute of Professional Studies, then found myself gravitating toward business problems, people, growth and execution.</p><p>So the toolkit is mixed on purpose: Excel, SQL and Power BI sit next to market research, client acquisition, stakeholder management and project coordination.</p><p>Long term, I want to work on problems where the answer isn't sitting in a playbook yet.</p></div></div>
+</section>
+
+<section id="contact">
+  <div class="contact reveal"><div class="section-kicker">06 / Let's talk</div><h2>Got a good<br>problem?</h2><p>I'm open to conversations around strategy, business operations, growth, founders' office and high-ownership roles.</p><div class="links"><a class="link" href="mailto:Pranshusingh1904@gmail.com">EMAIL ↗</a><a class="link" href="https://www.linkedin.com/in/pranshu-singh-80a476239/" target="_blank">LINKEDIN ↗</a><a class="link" href="Pranshu_Singh_Resume.pdf" target="_blank">RESUME ↗</a></div></div>
+</section>
+</div>
+</main>
+<div class="page"><footer><span>© 2026 PRANSHU SINGH</span><span>CURIOUS · CREATIVE · ALWAYS A WORK IN PROGRESS.</span></footer></div>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+</script>
+</body>
+</html>
